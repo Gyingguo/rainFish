@@ -1,19 +1,14 @@
 function getDirection (event, obj) {
-    /* this is the function to get mouse enterout direction
-     By detecting the mouse position on which area--
-     inside(entering) or outside(out) the target element
-     event.pageX and event.pageY to get the mouse position*/
     var mouseX = event.pageX;
     var mouseY = event.pageY;
-    var elementX = obj.offset().left;//JS: obj.offsetLeft;
-    var elementY = obj.offset().top;//JS: obj.offsetTop;
+    var elementX = obj.offset().left;
+    var elementY = obj.offset().top;
     var elWidth = obj.outerWidth();
     var elHeight = obj.outerHeight();
     var relativeX = mouseX - elementX;
     var relativeY = mouseY - elementY;
     var x = (relativeX - (elWidth / 2) * (elWidth > elHeight ? (elHeight / elWidth) : 1));
     var y = (relativeY - (elHeight / 2) * (elHeight > elWidth ? (elWidth / elHeight) : 1));
-    // learned from stack overflow--how to detect which direction mouse come
     var d = Math.round( Math.atan2(y, x) / 1.57079633 + 5 ) % 4;
     return d;
 };
@@ -27,8 +22,6 @@ var addClasses = function (direction, obj, state) {
     }
 };
 var removeClasses = function(obj){
-    // regular expression to match current class name
-    // that includeing state( in/out)
     var removePattern = / (in|out|rotate)_[a-zA-Z_]+/g;
     obj.each(function() {
         var currentClasses = $(this).attr('class');
@@ -40,8 +33,6 @@ var removeClasses = function(obj){
 };
 
 $(function() {
-    // mouseleave and mouseenter is different with mousehover and mouseout
-    // mouseleave and mouseenter won't affect the child of the animated element.
     $('.shelterWrapper').on('mouseenter', function(event){
         //$(this).children('.introShlter').css('')
         $(this).children('.cube').animate({'opacity':'0'},200);
