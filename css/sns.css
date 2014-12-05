@@ -1,4 +1,5 @@
-.index_body {
+.index {
+    height: 550px;
     background: url("../image/index_bg.jpg")repeat;
     overflow: hidden;
 }

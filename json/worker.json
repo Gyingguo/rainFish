@@ -1,0 +1,39 @@
+{
+    "workers":[
+        {
+            "worker_name": "作品名字",
+            "worker_image": "image/work_1.jpg",
+            "worker_description": "作品描述",
+            "worker_date": "创建时间",
+            "worker_tags": "javascript,css,html"
+        },
+        {
+        "worker_name": "作品名字",
+        "worker_image": "image/work_2.jpg",
+        "worker_description": "作品描述",
+        "worker_date": "创建时间",
+        "worker_tags": "javascript,css,html"
+        },
+        {
+        "worker_name": "作品名字",
+        "worker_image": "image/work_3.jpg",
+        "worker_description": "作品描述",
+        "worker_date": "创建时间",
+        "worker_tags": "javascript,css,html"
+        },
+        {
+        "worker_name": "作品名字",
+        "worker_image": "image/work_4.jpg",
+        "worker_description": "作品描述",
+        "worker_date": "创建时间",
+        "worker_tags": "javascript,css,html"
+        },
+        {
+        "worker_name": "作品名字",
+        "worker_image": "image/yet.jpg",
+        "worker_description": "作品描述",
+        "worker_date": "创建时间",
+        "worker_tags": "javascript,css,html"
+        }
+    ]
+}

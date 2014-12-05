@@ -1,8 +1,6 @@
-.worker_body {
+.worker {
     background: white;
     overflow: hidden;
-}
-.worker {
     position: relative;
     margin-top: 40px;
     font-size: 0px;
