@@ -1,0 +1,40 @@
+#comment-form {
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -375px;
+}
+#comment-form #reply-title {
+    color: #d58c41;
+    font-size: 18px;
+    margin-top: 20px;
+}
+#comment-form p {
+    padding: 6px;
+}
+.comment-form-author,.comment-form-email {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 3%;
+    width: 47%;
+}
+.comment-form-comment textarea {
+    width: 85%;
+    height: 200px;
+}
+.form-submit input#submit {
+    width: 150px;
+    height: 50px;
+    background-color: #d58c41;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
